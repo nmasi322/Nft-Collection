@@ -192,7 +192,7 @@ export default function Home() {
       }
     }
     else{
-      window.alert("You're not the owner, you can't withdraw funds!!") 
+      window.alert("You are not the owner, you cannot withdraw funds!!") 
     }
   }
 
@@ -229,7 +229,7 @@ export default function Home() {
         await getTokenIdsMinted();
       }, 5 * 1000);
     }
-  }, [walletConnected]);
+  }, [walletConnected, getTokenIdsMinted, connectWallet, checkIfPresaleEnded, checkIfPresaleStarted]);
 
   const renderButton = () => {
     // If wallet is not connected, return a button which allows them to connect their wllet
@@ -259,7 +259,7 @@ export default function Home() {
     if (!presaleStarted) {
       return (
         <div>
-          <div className={styles.description}>Presale hasn't started yet!</div>
+          <div className={styles.description}>Presale has not started yet!</div>
         </div>
       );
     }
