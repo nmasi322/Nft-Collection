@@ -301,7 +301,10 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Welcome to JS Devs!</h1>
           <div className={styles.description}>
-            Its an NFT collection for Javascript developers in Crypto. Price for each is 0.05 Goerli ETH. Make sure you have goerli eth!
+            Its an NFT collection for Javascript developers in Crypto. 
+          </div>
+          <div className={styles.description}>
+            Price for each is 0.05 Goerli ETH. Make sure you have goerli eth!
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
